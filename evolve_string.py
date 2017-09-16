@@ -9,7 +9,7 @@ logging.info("Successfully imported tools from genetic.")
 
 POPULATION_SIZE = 500
 global TARGET_STRING
-TARGET_STRING = "now is the winter of our discontent made glorious summer by this son of york"
+TARGET_STRING = "to be or not to be"
 global DNA_LENGTH
 DNA_LENGTH = len(TARGET_STRING)
 MUTATION_RATE = 1
@@ -76,7 +76,7 @@ def showStatus(self):
 
 #some useful printing functions
 def pos(x,y):
-return "\x1b[" + str(y) + ";" + str(x) + 'H'
+    return "\x1b[" + str(y) + ";" + str(x) + 'H'
 
 def pnt(x):
 	print(x,end='')
