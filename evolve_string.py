@@ -4,7 +4,7 @@ import string
 
 logging.basicConfig(level=logging.WARNING)
 logging.info("Attempting to import all from genetic.py...")
-from genetic2 import *
+from genetic import *
 logging.info("Successfully imported tools from genetic.")
 
 POPULATION_SIZE = 500
@@ -57,7 +57,7 @@ def fitnessFunction(s):
 
 def showStatus(self):
 	'''
-	This function will only work if it is passed into a population function as a method!
+	This function will only work when passed into a population object as a method!
 	'''
 	#outputting the data
 	pnt("\x1b[2J")
